@@ -5,7 +5,7 @@
             <div class="avatar_box">
                 <img src="../assets/logo.png">
             </div>
-            <!--            登录表单区域-->
+            <!--            登录表单区域    :rules表单验证规则-->
             <el-form ref="loginFormRef" label-width="0px" :model="loginFrom" :rules="loginFormrules" class="login_form">
                 <!--                用户名-->
                 <el-form-item prop="username">
@@ -64,7 +64,9 @@
             login(){
                 this.$refs.loginFormRef.validate(async valid=> {
                     if (!valid)return;
-                    //解构赋值获取data命名为res   async await异步执行
+                    //使用async进行异步执行，async会把函数封装成Promise 对象
+                    //await会拿到Promise.resolve里面的值
+                    //解构赋值获取data值命名为res
                     const {data : res} = await this.$http.post('login',this.loginFrom);
                     if (res.meta.status !== 200) return this.$message.error('登录失败');
                     this.$message.success('登录成功');
