@@ -321,6 +321,7 @@
             },
             // 修改用户信息并提交
             editUserInfo() {
+                //判断写的内容有没有通过校验规则，没通过返回校验错误信息，通过执行数据请求
                 this.$refs.editFormRef.validate(async valid => {
                     if (!valid) return;
                     // 发起修改用户信息的数据请求

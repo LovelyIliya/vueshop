@@ -88,7 +88,7 @@
               </span>
             </el-dialog>
             <!-- 修改角色窗口-->
-            <el-dialog title="修改角色" :visible.sync="editrolelogVisible" width="30%" @close="">
+            <el-dialog title="修改角色" :visible.sync="editrolelogVisible" width="30%">
                 <span>
                     <el-form :model="editForm" :rules="FormRoles" ref="editFormRef" label-width="90px">
                         <el-form-item label="用户名" prop="roleName">
