@@ -105,7 +105,7 @@
                 </span>
             </el-dialog>
         </el-card>
-        <!--         分配权限的对话框   -->
+        <!--分配权限的对话框-->
         <el-dialog title="分配权限" :visible.sync="setRightDialogVisible" width="40%" @close="setRightDialogClosed">
             <!--                树形控件-->
             <el-tree :data="rightList" :props="treeProps" show-checkbox node-key="id" default-expand-all
