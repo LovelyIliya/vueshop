@@ -24,7 +24,7 @@
             </el-form>
         </div>
         <div class="footer">
-            <p>作者社交主页</p>
+            <p>作者个人主页</p>
             <p>CSDN：&nbsp;&nbsp;<a href="https://blog.csdn.net/zzz18789">https://blog.csdn.net/zzz18789 </a></p>
             <p>GitHub：<a href="https://github.com/LovelyIliya/">https://github.com/LovelyIliya/</a></p>
         </div>

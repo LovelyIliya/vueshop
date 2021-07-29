@@ -5,25 +5,25 @@ html,body,#app{
     padding: 0;
     min-width: 1000px;
 }
-
+/*面包屑导航*/
 .el-breadcrumb{
     margin-bottom: 15px;
     font-size: 12px;
 }
-
+/*卡片视图*/
 .el-card{
     box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
 }
-
+/*表格*/
 .el-table{
     margin-top: 15px;
     font-size: 13px;
 }
-
+/*分页*/
 .el-pagination{
     margin-top: 15px;
 }
-
+/*级联选择器*/
 .el-cascader-menu {
     height: 300px;
 }
@@ -46,3 +46,15 @@ html,body,#app{
     top: 10px;
 }
 /*-------------------------------------------------------*/
+/*步骤条*/
+.el-steps{
+    margin: 15px 0;
+}
+
+.el-step__title{
+    font-size: 13px;
+}
+/*富文本编辑器*/
+.ql-editor{
+    min-height: 300px;
+}
