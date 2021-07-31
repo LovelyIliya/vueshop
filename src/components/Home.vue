@@ -3,7 +3,7 @@
         <!--        头部区域-->
         <el-header>
             <div>
-                <img src="../assets/heima.png" alt="">
+                <img src="../assets/logo2.png" alt="">
                 <span>电商后台管理系统</span>
             </div>
             <el-button type="info" @click="logout">退出</el-button>
@@ -110,6 +110,12 @@
             display: flex;
             align-items: center;
 
+            img{
+                width: 55px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
             span {
                 margin-left: 15px;
             }
@@ -140,4 +146,5 @@
         letter-spacing: 0.2em;
         cursor: pointer;
     }
+
 </style>

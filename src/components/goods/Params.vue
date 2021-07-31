@@ -283,7 +283,7 @@
                 })
             },
             // 根据id删除对应的参数项
-            async removeParams(attr_id) {
+            async removeParams(attrId) {
                 const confirmResule = await this.$confirm('此操作将永久删除该参数, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
@@ -292,7 +292,7 @@
                 if (confirmResule !== 'confirm') {
                     return this.$message.info('已取消删除！')
                 }
-                const {data: res} = await this.$http.delete(`categories/${this.cateId}/attributes/${attr_id}`)
+                const {data: res} = await this.$http.delete(`categories/${this.cateId}/attributes/${attrId}`)
                 if (res.meta.status !== 200) {
                     return this.$message.error('删除参数失败！')
                 }
